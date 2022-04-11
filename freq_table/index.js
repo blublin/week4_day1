@@ -35,20 +35,20 @@ const expected3 = {};
  *    from the given arr and the values are the amnt of times that item occurs.
  */
 function frequencyTableBuilder(arr) {
-    let freqTable = {}
-
+    
     // for (let ind = 0; ind < arr.length; ind++)  {
-    //     if (debug) {
-    //         console.log(arr[ind])
-    //     }
-    //     if (freqTable.hasOwnProperty(arr[ind])) {
-    //         freqTable[arr[ind]]++
-    //     }
-    //     else {
-    //         freqTable[arr[ind]] = 1
-    //     }
-    // }
-
+        //     if (debug) {
+            //         console.log(arr[ind])
+            //     }
+            //     if (freqTable.hasOwnProperty(arr[ind])) {
+                //         freqTable[arr[ind]]++
+                //     }
+                //     else {
+                    //         freqTable[arr[ind]] = 1
+                    //     }
+                    // }
+                    
+    let freqTable = {}
     for (let elem of arr) {
         if (debug) {
             console.log(elem)
@@ -68,6 +68,8 @@ function frequencyTableBuilder(arr) {
     return freqTable
 }
 
-console.log(frequencyTableBuilder(arr1))
-console.log(frequencyTableBuilder(arr2))
-console.log(frequencyTableBuilder(arr3))
+// console.log(frequencyTableBuilder(arr1))
+// console.log(frequencyTableBuilder(arr2))
+// console.log(frequencyTableBuilder(arr3))
+
+module.exports = { frequencyTableBuilder };
